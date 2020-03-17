@@ -68,7 +68,7 @@ class Foo {
           class="PHPMD\Rule\UnusedPrivateMethod"
           externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedprivatemethod">
         <description>
-Unused Private Method detects when a private method is declared but is unused.
+        使われていないコードを検出するルール
         </description>
         <priority>3</priority>
         <example>

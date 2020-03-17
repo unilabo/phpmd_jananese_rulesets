@@ -83,7 +83,7 @@ class Something
 
     <rule name="UnusedFormalParameter"
           since="0.2"
-          message="Avoid unused parameters such as '{0}'."
+          message="「{0}」のような未使用のパラメータは避けてください。"
           class="PHPMD\Rule\UnusedFormalParameter"
           externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter">
         <description>

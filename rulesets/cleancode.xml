@@ -37,7 +37,7 @@ class Foo {
 
     <rule name="ElseExpression"
           since="1.4.0"
-          message="The method {0} uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them."
+          message="メソッド「{0}」はelse式を使用します。 Else句は基本的に不要であり、使用しないことでコードを簡素化できます。"
           class="PHPMD\Rule\CleanCode\ElseExpression"
           externalInfoUrl="https://phpmd.org/rules/cleancode.html#elseexpression">
         <description>
@@ -104,7 +104,7 @@ class Foo
 
     <rule name="StaticAccess"
           since="1.4.0"
-          message="Avoid using static access to class '{0}' in method '{1}'."
+          message="メソッド '{1}'のクラス '{0}'への静的アクセスを使用しないでください。"
           class="PHPMD\Rule\CleanCode\StaticAccess"
           externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess">
         <description>
@@ -160,7 +160,7 @@ function createArray() {
 
     <rule name="MissingImport"
           since="2.7.0"
-          message="Missing class import via use statement (line '{0}', column '{1}')."
+          message="useステートメントによるクラスインポートの欠落（行 '{0}'、列 '{1}'）。"
           class="PHPMD\Rule\CleanCode\MissingImport"
           externalInfoUrl="http://phpmd.org/rules/cleancode.html#MissingImport">
         <description>
@@ -202,3 +202,4 @@ class Foo
     </rule>
 
 </ruleset>
+s

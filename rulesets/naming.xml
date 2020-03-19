@@ -162,8 +162,6 @@ class Foo {
         </example>
     </rule>
 
-<!--
-
     <rule name="VariableNamingConventions"
     since="1.2"
     message="{0} variable {1} should begin with {2}"
@@ -358,6 +356,5 @@ indicates a field and thus is confusing.
       </example>
     </rule>
 
--->
 
 </ruleset>

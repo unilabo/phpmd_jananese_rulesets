@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<ruleset name="Unilabo PHPMD rule set"
+         xmlns="http://pmd.sf.net/ruleset/1.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0
+                     http://pmd.sf.net/ruleset_xml_schema.xsd"
+         xsi:noNamespaceSchemaLocation="
+                     http://pmd.sf.net/ruleset_xml_schema.xsd">
+    <description>
+        ユニラボ https://unilabo.jp
+    </description>
+    <!-- Import the entire cleancode rule set & excluded rulesets -->
+    <rule ref="./rulesets/cleancode.xml">
+      <exclude name="StaticAccess" />
+    </rule>
+
+    <!-- Import the entire unused code rule set -->
+    <rule ref="./rulesets/unusedcode.xml" />
+
+    <!-- Import the entire codesize rule -->
+    <rule ref="./rulesets/codesize.xml" />
+
+    <!-- Import entire naming rule set -->
+    <rule ref="rulesets/naming.xml" >
+      <exclude name="LongVariable" />
+    </rule>
+
+    <!-- Import entire controversial rule set -->
+    <rule ref="./rulesets/controversial.xml">
+      <exclude name="CamelCasePropertyName" />
+      <exclude name="CamelCaseVariableName" />
+      <exclude name="CamelCaseParameterName" />
+    </rule>
+
+    <!-- Import entire design rule set -->
+    <rule ref="./rulesets/design.xml" />
+</ruleset>

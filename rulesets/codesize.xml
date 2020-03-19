@@ -12,7 +12,7 @@
 
     <rule name="CyclomaticComplexity"
           since="0.1"
-          message = "The {0} {1}() has a Cyclomatic Complexity of {2}. The configured cyclomatic complexity threshold is {3}."
+          message = "{0} {1}（）の循環的複雑度は{2}です。 構成された循環的複雑度のしきい値は{3}です。"
           class="PHPMD\Rule\CyclomaticComplexity"
           externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity">
         <description>
@@ -78,7 +78,7 @@ class Foo {
 
     <rule name="NPathComplexity"
           since="0.1"
-          message="The {0} {1}() has an NPath complexity of {2}. The configured NPath complexity threshold is {3}."
+          message="{0} {1}（）のNPathの複雑度は{2}です。 構成されたNPath複雑度のしきい値は{3}です。"
           class="PHPMD\Rule\Design\NpathComplexity"
           externalInfoUrl="https://phpmd.org/rules/codesize.html#npathcomplexity">
         <description>

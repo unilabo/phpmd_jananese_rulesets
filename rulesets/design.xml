@@ -193,7 +193,7 @@ class Foo {
 
     <rule name="DevelopmentCodeFragment"
           since="2.3.0"
-          message="{0} {1}()は、開発時にのみ使用される一般的なデバッグ関数{2}（）を呼び出します。"
+          message="{0} {1}()は、開発時にのみ使用される一般的なデバッグ関数{2}()を呼び出します。"
           class="PHPMD\Rule\Design\DevelopmentCodeFragment"
           externalInfoUrl="https://phpmd.org/rules/design.html#developmentcodefragment">
         <description>

@@ -7,12 +7,12 @@
          xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
 
     <description>
-	循環的複雑度などコードサイズ関連部分を検出するルール
+循環的複雑度などコードサイズ関連部分を検出するルール
     </description>
 
     <rule name="CyclomaticComplexity"
           since="0.1"
-          message = "{0} {1}（）の循環的複雑度は{2}です。 構成された循環的複雑度のしきい値は{3}です。"
+          message = "{0} {1}()の循環的複雑度は{2}です。 構成された循環的複雑度のしきい値は{3}です。"
           class="PHPMD\Rule\CyclomaticComplexity"
           externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity">
         <description>
@@ -78,7 +78,7 @@ class Foo {
 
     <rule name="NPathComplexity"
           since="0.1"
-          message="{0} {1}（）のNPathの複雑度は{2}です。 構成されたNPath複雑度のしきい値は{3}です。"
+          message="{0} {1}()のNPathの複雑度は{2}です。 構成されたNPath複雑度のしきい値は{3}です。"
           class="PHPMD\Rule\Design\NpathComplexity"
           externalInfoUrl="https://phpmd.org/rules/codesize.html#npathcomplexity">
         <description>
@@ -102,7 +102,7 @@ class Foo {
 
     <rule name="ExcessiveMethodLength"
           since="0.1"
-          message="The {0} {1}() has {2} lines of code. Current threshold is set to {3}. Avoid really long methods."
+          message="{0} {1}()には{2}行のコードがあります。 現在のしきい値は{3}に設定されています。 本当に長い方法は避けてください。"
           class="PHPMD\Rule\Design\LongMethod"
           externalInfoUrl="https://phpmd.org/rules/codesize.html#excessivemethodlength">
         <description>
@@ -129,7 +129,7 @@ class Foo {
 
     <rule name="ExcessiveClassLength"
  	  since="0.1"
-          message="The class {0} has {1} lines of code. Current threshold is {2}. Avoid really long classes."
+          message="クラス{0}には{1}行のコードがあります。 現在のしきい値は{2}です。 本当に長いクラスを避けてください。"
           class="PHPMD\Rule\Design\LongClass"
           externalInfoUrl="https://phpmd.org/rules/codesize.html#excessiveclasslength">
         <description>
@@ -155,7 +155,7 @@ class Foo {
 
     <rule name="ExcessiveParameterList"
           since="0.1"
-          message="The {0} {1} has {2} parameters. Consider reducing the number of parameters to less than {3}."
+          message="{0} {1}には{2}パラメーターがあります。 パラメーターの数を{3}未満に減らすことを検討してください。"
           class="PHPMD\Rule\Design\LongParameterList"
           externalInfoUrl="https://phpmd.org/rules/codesize.html#excessiveparameterlist">
         <description>
@@ -181,7 +181,7 @@ class Foo {
 
     <rule name="ExcessivePublicCount"
           since="0.1"
-          message="The {0} {1} has {2} public methods and attributes. Consider reducing the number of public items to less than {3}."
+          message="{0} {1}には{2}のパブリックメソッドと属性があります。 公開アイテムの数を{3}未満に減らすことを検討してください。"
           class="PHPMD\Rule\ExcessivePublicCount"
           externalInfoUrl="https://phpmd.org/rules/codesize.html#excessivepubliccount">
         <description>
@@ -212,7 +212,7 @@ public class Foo {
 
     <rule name="TooManyFields"
           since="0.1"
-          message="The {0} {1} has {2} fields. Consider redesigning {1} to keep the number of fields under {3}."
+          message="{0} {1}には{2}フィールドがあります。 {1}を再設計して、フィールド数を{3}未満に保つことを検討してください。"
           class="PHPMD\Rule\Design\TooManyFields"
           externalInfoUrl="https://phpmd.org/rules/codesize.html#toomanyfields">
         <description>

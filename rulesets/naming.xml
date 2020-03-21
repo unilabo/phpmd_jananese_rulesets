@@ -5,12 +5,12 @@
          xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd"
          xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
     <description>
-    長すぎたり、短すぎたりする名前を検出するルール
+長すぎたり、短すぎたりする名前を検出するルール
     </description>
 
     <rule name="ShortVariable"
           since="0.2"
-          message="Avoid variables with short names like {0}. Configured minimum length is {1}."
+          message="{0}のような短い名前の変数は避けてください。 構成された最小長は{1}です。"
           class="PHPMD\Rule\Naming\ShortVariable"
           externalInfoUrl="https://phpmd.org/rules/naming.html#shortvariable">
         <description>
@@ -38,7 +38,7 @@ class Something {
 
     <rule name="LongVariable"
           since="0.2"
-          message="Avoid excessively long variable names like {0}. Keep variable name length under {1}."
+          message="{0}のような過度に長い変数名は避けてください。 変数名の長さを{1}未満に保ちます。"
           class="PHPMD\Rule\Naming\LongVariable"
           externalInfoUrl="https://phpmd.org/rules/naming.html#longvariable">
         <description>
@@ -66,7 +66,7 @@ class Something {
 
     <rule name="ShortMethodName"
           since="0.2"
-          message="Avoid using short method names like {0}::{1}(). The configured minimum method name length is {2}."
+          message="{0}::{1}()のような短いメソッド名の使用は避けてください。 構成された最小メソッド名の長さは{2}です。"
           class="PHPMD\Rule\Naming\ShortMethodName"
           externalInfoUrl="https://phpmd.org/rules/naming.html#shortmethodname">
         <description>
@@ -89,7 +89,7 @@ class ShortMethod {
 
     <rule name="ConstructorWithNameAsEnclosingClass"
           since="0.2"
-          message="Classes should not have a constructor method with the same name as the class"
+          message="クラスには、クラスと同じ名前のコンストラクターメソッドを含めることはできません。"
           class="PHPMD\Rule\Naming\ConstructorWithNameAsEnclosingClass"
           externalInfoUrl="https://phpmd.org/rules/naming.html#constructorwithnameasenclosingclass">
         <description>
@@ -111,7 +111,7 @@ class MyClass {
 
     <rule name="ConstantNamingConventions"
           since="0.2"
-          message="Constant {0} should be defined in uppercase"
+          message="定数{0}は大文字で定義する必要があります"
           class="PHPMD\Rule\Naming\ConstantNamingConventions"
           externalInfoUrl="https://phpmd.org/rules/naming.html#constantnamingconventions">
         <description>
@@ -131,7 +131,7 @@ class Foo {
 
     <rule name="BooleanGetMethodName"
           since="0.2"
-          message="The '{0}()' method which returns a boolean should be named 'is...()' or 'has...()'"
+          message="ブール値を返す「{0}()」メソッドは、「is...()」または「has...()」という名前にする必要があります"
           class="PHPMD\Rule\Naming\BooleanGetMethodName"
           externalInfoUrl="https://phpmd.org/rules/naming.html#booleangetmethodname">
         <description>
@@ -164,7 +164,7 @@ class Foo {
 
     <rule name="VariableNamingConventions"
     since="1.2"
-    message="{0} variable {1} should begin with {2}"
+    message="{0}変数{1}は{2}で始まる必要があります"
     class="net.sourceforge.pmd.rules.VariableNamingConventions"
           externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#VariableNamingConventions">
         <description>
@@ -192,7 +192,7 @@ public class Foo {
 
     <rule name="MethodNamingConventions"
     			  since="1.2"
-              message="Method name does not begin with a lower case character."
+              message="メソッド名は小文字で始まっていません。"
               class="net.sourceforge.pmd.rules.MethodNamingConventions"
           externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#MethodNamingConventions">
           <description>
@@ -211,7 +211,7 @@ public class Foo {
 
     <rule name="ClassNamingConventions"
     		 since="1.2"
-          message="Class names should begin with an uppercase character"
+          message="クラス名は大文字で始める必要があります"
           class="net.sourceforge.pmd.rules.ClassNamingConventions"
           externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#ClassNamingConventions">
       <description>
@@ -227,7 +227,7 @@ public class Foo {}
 
     <rule name="AbstractNaming"
     		 since="1.4"
-          message="Abstract classes should be named 'AbstractXXX'"
+          message="抽象クラスは「AbstractXXX」という名前にする必要があります"
           class="net.sourceforge.pmd.rules.XPathRule"
           externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#AbstractNaming">
        <description>
@@ -255,7 +255,7 @@ public abstract class Foo { // should be AbstractFoo
 
     <rule name="AvoidFieldNameMatchingTypeName"
     		 since="3.0"
-          message="It is somewhat confusing to have a field name matching the declaring class name"
+          message="宣言するクラス名と一致するフィールド名を持つのはやや混乱します"
           class="net.sourceforge.pmd.rules.AvoidFieldNameMatchingTypeName"
           externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#AvoidFieldNameMatchingTypeName">
       <description>
@@ -275,7 +275,7 @@ public class Foo extends Bar {
 
     <rule name="AvoidFieldNameMatchingMethodName"
     		 since="3.0"
-          message="It is somewhat confusing to have a field name with the same name as a method"
+          message="メソッドと同じ名前のフィールド名を持つのはやや混乱します"
           class="net.sourceforge.pmd.rules.AvoidFieldNameMatchingMethodName"
           externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#AvoidFieldNameMatchingMethodName">
       <description>
@@ -298,7 +298,7 @@ public class Foo {
 
     <rule name="NoPackage"
         since="3.3"
-        message="All classes and interfaces must belong to a named package"
+        message="すべてのクラスとインターフェイスは名前付きパッケージに属している必要があります"
         class="net.sourceforge.pmd.rules.XPathRule"
           externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#NoPackage">
     <description>
@@ -325,7 +325,7 @@ public class ClassInDefaultPackage {
 
     <rule name="MisleadingVariableName"
           since="3.4"
-          message="Avoid naming non-fields with the prefix 'm_'"
+          message="接頭辞 'm_'でフィールド以外の名前を付けないようにします"
           class="net.sourceforge.pmd.rules.XPathRule"
           externalInfoUrl="http://pmd.sourceforge.net/rules/naming.html#MisleadingVariableName">
       <description>

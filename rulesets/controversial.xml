@@ -7,7 +7,7 @@
          xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
 
     <description>
-    キャメルケースなど議論の余地のある部分を検出するルール
+キャメルケースなど議論の余地のある部分を検出するルール
     </description>
 
     <rule name="Superglobals"

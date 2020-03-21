@@ -6,12 +6,12 @@
          xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd"
          xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
     <description>
-The Unused Code Ruleset contains a collection of rules that find unused code.
+未使用コードルールセットには、未使用コードを見つけるルールのコレクションが含まれています。
     </description>
 
     <rule name="UnusedPrivateField"
           since="0.2"
-          message="Avoid unused private fields such as '{0}'."
+          message="'{0}'などの未使用のプライベートフィールドは避けてください。"
           class="PHPMD\Rule\UnusedPrivateField"
           externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedprivatefield">
         <description>
@@ -36,7 +36,7 @@ class Something
 
     <rule name="UnusedLocalVariable"
           since="0.2"
-          message="Avoid unused local variables such as '{0}'."
+          message="'{0}'などの未使用のローカル変数は避けてください。"
           class="PHPMD\Rule\UnusedLocalVariable"
           externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable">
         <description>
@@ -64,7 +64,7 @@ class Foo {
 
     <rule name="UnusedPrivateMethod"
           since="0.2"
-          message="Avoid unused private methods such as '{0}'."
+          message="'{0}'などの未使用のプライベートメソッドは避けてください。"
           class="PHPMD\Rule\UnusedPrivateMethod"
           externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedprivatemethod">
         <description>

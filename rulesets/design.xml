@@ -7,12 +7,12 @@
          xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
 
     <description>
-    ソフトの設計関連の問題を検出するルール
+ソフトの設計関連の問題を検出するルール
     </description>
 
     <rule name="ExitExpression"
           since="0.2"
-          message = "The {0} {1}() contains an exit expression."
+          message = "{0} {1}()にはexit式が含まれています。"
           class="PHPMD\Rule\Design\ExitExpression"
           externalInfoUrl="https://phpmd.org/rules/design.html#exitexpression">
         <description>
@@ -39,7 +39,7 @@ class Foo {
 
     <rule name="EvalExpression"
           since="0.2"
-          message = "The {0} {1}() contains an eval expression."
+          message = "{0} {1}()にはeval式が含まれています。"
           class="PHPMD\Rule\Design\EvalExpression"
           externalInfoUrl="https://phpmd.org/rules/design.html#evalexpression">
         <description>
@@ -66,7 +66,7 @@ class Foo {
 
     <rule name="GotoStatement"
           since="1.1.0"
-          message="The {0} {1}() utilizes a goto statement."
+          message="{0} {1}()はgotoステートメントを使用します。"
           class="PHPMD\Rule\Design\GotoStatement"
           externalInfoUrl="https://phpmd.org/rules/design.html#gotostatement">
         <description>
@@ -105,7 +105,7 @@ class Foo {
 
     <rule name="NumberOfChildren"
           since="0.2"
-          message = "The {0} {1} has {2} children. Consider to rebalance this class hierarchy to keep number of children under {3}."
+          message = "{0} {1}には{2}の子がいます。 {3}未満の子の数を維持するために、このクラス階層を再調整することを検討してください。"
           class="PHPMD\Rule\Design\NumberOfChildren"
           externalInfoUrl="https://phpmd.org/rules/design.html#numberofchildren">
         <description>
@@ -123,7 +123,7 @@ class hierarchy. You should consider to refactor this class hierarchy.
 
     <rule name="DepthOfInheritance"
           since="0.2"
-          message = "The {0} {1} has {2} parents. Consider to reduce the depth of this class hierarchy to under {3}."
+          message = "{0} {1}には{2}の親がいます。 このクラス階層の深さを{3}未満に減らすことを検討してください。"
           class="PHPMD\Rule\Design\DepthOfInheritance"
           externalInfoUrl="https://phpmd.org/rules/design.html#depthofinheritance">
         <description>
@@ -141,7 +141,7 @@ hierarchy. You should consider to refactor this class hierarchy.
 
     <rule name="CouplingBetweenObjects"
           since="1.1.0"
-          message="The class {0} has a coupling between objects value of {1}. Consider to reduce the number of dependencies under {2}."
+          message="クラス{0}には、オブジェクト間のカップリング値{1}があります。 {2}の下の依存関係の数を減らすことを検討してください。"
           class="PHPMD\Rule\Design\CouplingBetweenObjects"
           externalInfoUrl="https://phpmd.org/rules/design.html#couplingbetweenobjects">
         <description>
@@ -193,7 +193,7 @@ class Foo {
 
     <rule name="DevelopmentCodeFragment"
           since="2.3.0"
-          message="The {0} {1}() calls the typical debug function {2}() which is mostly only used during development."
+          message="{0} {1}()は、開発時にのみ使用される一般的なデバッグ関数{2}（）を呼び出します。"
           class="PHPMD\Rule\Design\DevelopmentCodeFragment"
           externalInfoUrl="https://phpmd.org/rules/design.html#developmentcodefragment">
         <description>
@@ -229,7 +229,7 @@ class SuspectCode {
 
     <rule name="EmptyCatchBlock"
           since="2.7.0"
-          message="Avoid using empty try-catch blocks in {0}."
+          message="{0}で空のtry-catchブロックを使用しないでください。"
           class="PHPMD\Rule\Design\EmptyCatchBlock"
           externalInfoUrl="https://phpmd.org/rules/design.html#emptycatchblock">
         <description>
@@ -259,7 +259,7 @@ class Foo {
 
     <rule name="CountInLoopExpression"
           since="2.7.0"
-          message="Avoid using {0}() function in {1} loops."
+          message="{1}ループで{0}()関数を使用しないでください。"
           class="PHPMD\Rule\Design\CountInLoopExpression"
           externalInfoUrl="https://phpmd.org/rules/design.html#countinloopexpression">
         <description>

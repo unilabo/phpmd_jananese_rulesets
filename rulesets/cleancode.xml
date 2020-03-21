@@ -7,12 +7,12 @@
          xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
 
     <description>
-The Clean Code ruleset contains rules that enforce a clean code base. This includes rules from SOLID and object calisthenics.
+クリーンコードルールセットには、クリーンコードベースを強制するルールが含まれています。 これには、SOLIDからのルールとオブジェクトの体操が含まれます。
     </description>
 
     <rule name="BooleanArgumentFlag"
           since="1.4.0"
-          message="The method {0} has a boolean flag argument {1}, which is a certain sign of a Single Responsibility Principle violation."
+          message="メソッド{0}にはブール値のフラグ引数{1}があり、これは(Single Responsibility Principle)単一責任原則違反の特定の兆候です。"
           class="PHPMD\Rule\CleanCode\BooleanArgumentFlag"
           externalInfoUrl="https://phpmd.org/rules/cleancode.html#booleanargumentflag">
         <description>
@@ -70,7 +70,7 @@ class Foo
 
     <rule name="IfStatementAssignment"
           since="2.7.0"
-          message="Avoid assigning values to variables in if clauses and the like (line '{0}', column '{1}')."
+          message="if句などの変数に値を割り当てないでください（行 '{0}'、列 '{1}'）。"
           class="PHPMD\Rule\CleanCode\IfStatementAssignment"
           externalInfoUrl="http://phpmd.org/rules/cleancode.html#ifstatementassignment">
         <description>
@@ -132,7 +132,7 @@ class Foo
     </rule>
 
     <rule name="DuplicatedArrayKey"
-          message="Duplicated array key {0}, first declared at line {1}."
+          message="重複した配列キー{0}、最初に行{1}で宣言されました。"
           class="PHPMD\Rule\CleanCode\DuplicatedArrayKey"
           externalInfoUrl="http://phpmd.org/rules/cleancode.html#duplicatedarraykey">
         <description>
@@ -180,7 +180,7 @@ function make() {
 
     <rule name="UndefinedVariable"
           since="2.8.0"
-          message="Avoid using undefined variables such as '{0}' which will lead to PHP notices."
+          message="PHPの通知につながる '{0}'などの未定義変数の使用は避けてください。"
           class="PHPMD\Rule\CleanCode\UndefinedVariable"
           externalInfoUrl="">
         <description>
